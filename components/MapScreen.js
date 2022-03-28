@@ -26,7 +26,6 @@ export default function MapScreen ( {route, navigation} ) {
     fetch(`${mapQuestAddressSearch}?key=${MapQuestApiKey}&location=${address}`)
       .then( req => req.json() )
       .then( data => {
-        console.log(data)
         setRegion(
           {
             ...region,
